@@ -283,7 +283,7 @@ a {
 
 .select-input--default {
     width: 100%;
-    color: var(--font-color-gray);
+    color: var(--font-color-primary);
     padding: .8rem;
     border: 1px solid var(--font-color-gray);
     font-family: var(--font-primary);
@@ -296,8 +296,11 @@ a {
     font-size: 16px;
 }
 
+.select-input--default option[value="default"] {
+    color: #FFF;
+}
+
 .option--default {
-    color: var(--font-color-primary);
     background-color: var(--bg-container-primary);
     font-family: var(--font-primary);
     border: 1px solid var(--font-color-gray);

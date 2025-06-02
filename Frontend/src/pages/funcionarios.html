@@ -11,136 +11,118 @@
 <body>
 	<header class="header">
 		<div class="logo-container">
-			<img src="/public/images/criptobet-logo.png" alt="">
+			<img src="../../public/images/criptobet-logo.png" alt="">
 		</div>
 
 		<nav class="navbar">
 			<ul>
 				<li>
-					<a href="">Home</a>
-					<a href="">Cadastrar</a>
-					<a href="">Login</a>
+					<a href="../../index.html">Home</a>
+					<a href="cliente.html">Cadastrar</a>
+					<a href="cliente.html">Login</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<div class="container-title">
-			<div class="container-title--bg"></div>
-			<div class="container-title--inner">
-				<h1>Faça seu cadastro de funcionário abaixo</h1>
-			</div>
-		</div>
-
-		<header class="header">
-			<div class="logo-container">
-				<img src="images/criptobet-logo.png" alt="">
-			</div>
-
-			<nav class="navbar">
-				<ul>
-					<li>
-						<a href="">Home</a>
-						<a href="">Cadastrar</a>
-						<a href="">Login</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
 		<main>
-			<ul>
-				<form class="form">
-					<li>
-						<label for="inputs">Nome</label>
-						<input id="nome_input" class="inputs" type="text">
-					</li>
+			<div class="container-title">
+				<div class="container-title--bg"></div>
+				<div class="container-title--inner">
+					<h1>Faça seu cadastro de funcionário abaixo</h1>
+				</div>
+			</div>
+				<div class="container-form">
+					<div class="container-form--bg"></div>
+					<form class="default-form">
+						<input class="form-input--default" id="name" placeholder="Nome completo" name="name"
+							type="text" required>
+						<input class="form-input--default" id="email" placeholder="Email" name="email" type="text"
+							required>
+						<div class="input-container">
+							<input class="form-input--default password-input" id="password" placeholder="Senha"
+								name="password" type="password" required>
+							<button id="btn-view-password" class="btn-view-password" title="Mostrar senha"
+								type="button">
+								<img src="/public/images/senha-escondida.png" alt="Botão exibir senha">
+							</button>
+							<i id="password-error" class="error-message password-error">A senha não pode ter menos de 8 caracteres</i>
+						</div>
+						<input class="form-input--default" id="birthday" placeholder="Data de nascimento"
+							name="birthday" type="date">
+						<div class="input-container">
+							<input class="form-input--default form-input--cpf" id="cpf"
+								placeholder="CPF (Apenas Números)" name="cpf" type="text">
+							<i id="cpf-error" class="error-message cpf-error">O campo CPF só deve conter
+								números</i>
+						</div>
+						<input class="form-input--default form-input--submit" id="btnSubmit" type="submit"
+							name="btn-submit">
 
-					<div class="container-form">
-						<div class="container-form--bg"></div>
-						<form class="default-form">
-							<input class="form-input--default" id="name" placeholder="Nome completo" name="name"
-								type="text" required>
-							<input class="form-input--default" id="email" placeholder="Email" name="email" type="text"
-								required>
-							<div class="input-container">
-								<input class="form-input--default password-input" id="password" placeholder="Senha"
-									name="password" type="password" required>
-								<button id="btn-view-password" class="btn-view-password" title="Mostrar senha"
-									type="button">
-									<img src="/public/images/senha-escondida.png" alt="Botão exibir senha">
-								</button>
-								<i id="password-error" class="error-message password-error">A senha não pode ter
-									menos de 8 caracteres</i>
-							</div>
-							<input class="form-input--default" id="birthday" placeholder="Data de nascimento"
-								name="birthday" type="date">
-							<div class="input-container">
-								<input class="form-input--default form-input--cpf" id="cpf"
-									placeholder="CPF (Apenas Números)" name="cpf" type="text">
-								<i id="cpf-error" class="error-message cpf-error">O campo CPF só deve conter
-									números</i>
-							</div>
+					</form>
+				</div>
 
-
-
-							<input class="form-input--default form-input--submit" id="btnSubmit" type="submit"
-								name="btn-submit">
-
-						</form>
-					</div>
-
-					<div class="container-table">
-						<div class="container-table--bg"></div>
-						<h3>Dados Cadastrados</h3>
-						<table class="default-table">
-							<thead>
-								<tr>
-									<th>Nome</th>
-									<th>Email</th>
-									<th>Nascimento</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Arthur Parada</td>
-									<td>arthur.cavalheiro@uscsonline.com.br</td>
-									<td>08/04/2006</td>
-								</tr>
-								<tr>
-									<td>Enzo Nogueira</td>
-									<td>enzo.nogueira@uscsonline.com.br</td>
-									<td>12/03/2007</td>
-								</tr>
-								<tr>
-									<td>Henri Porto</td>
-									<td>henri.porto@uscsonline.com.br</td>
-									<td>14/06/2007</td>
-								</tr>
-								<tr>
-									<td>Nicolas Lepore</td>
-									<td>nicolas.lepore@uscsonline.com.br</td>
-									<td>26/09/2006</td>
-								</tr>
-								<tr>
-									<td>Rafael Pinho</td>
-									<td>rafael.pinho@uscsonline.com.br</td>
-									<td>05/04/2007</td>
-								</tr>
-								<tr>
-									<td>Rafael Santos</td>
-									<td>rafael.pereira2@uscsonline.com.br</td>
-									<td>19/11/2004</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
+				<div class="container-table">
+			<div class="container-table--bg"></div>
+			<h3>Dados Cadastrados</h3>
+			<table class="default-table">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>Salário</th>
+						<th>Nascimento</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Renato Carioca</td>
+						<td>renato.carioca@uscsonline.com.br</td>
+						<td>R$ 21.781,98</td>
+						<td>08/04/1989</td>
+					</tr>
+					<tr>
+						<td>Fábio Assis</td>
+						<td>fabio.assis@uscsonline.com.br</td>
+						<td>R$ 20.781,98</td>
+						<td>11/06/1979</td>
+					</tr>
+					<tr>
+						<td>Alexandre Banco de Dados</td>
+						<td>alexandre.bancodedados@uscsonline.com.br</td>
+						<td>R$ 31.781,98</td>
+						<td>09/02/1976</td>
+					</tr>
+					<tr>
+						<td>Wellington Usabilidade</td>
+						<td>wellington.usabilidade@uscsonline.com.br</td>
+						<td>R$ 18.721,90</td>
+						<td>08/04/1999</td>
+					</tr>
+					<tr>
+						<td>Leila Leila</td>
+						<td>leila.leila@uscsonline.com.br</td>
+						<td>R$ 8.211,91</td>
+						<td>01/01/1958</td>
+					</tr>
+					<tr>
+						<td>Neiva Coelho</td>
+						<td>neiva.coelho@uscsonline.com.br</td>
+						<td>R$ 6.119,99</td>
+						<td>11/10/2006</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		</main>
 		<footer>
 			<small>
 				<i>Copyright &copf;2025 - Criptobet</i>
 			</small>
 		</footer>
+
+		<script src="../app/button.js"></script>
+	<script src="../app/passwordValidator.js"></script>
+	<script src="../app/cpfValidator.js"></script>
 </body>
 
 </html>
