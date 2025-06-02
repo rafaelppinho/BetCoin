@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriptoBet-Premios</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/jogos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="../../public/images/criptobet-logo.png" alt="Logo da Criptobet">
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../../index.html">Home</a>
+                    <a href="cliente.html">Cadastrar</a>
+                    <a href="cliente.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="games-main">
+        <div class="container-title">
+            <div class="container-title--bg"></div>
+            <div class="container-title--inner">
+                <h1>Cadastre seus premios abaixo - Admin</h1>
+            </div>
+        </div>
+
+        <div class="container-form">
+            <div class="container-form--bg"></div>
+            <form class="default-form" id="gameForm">
+                <input type="text" id="premio_nome" class="form-input--default" placeholder="Nome do Prêmio" required>
+
+                <select name="Tipo de premios" id="TypeJogos" class="select-input--default">
+                    <option value="default" class="option--default" disabled selected>Tipos de Premios</option>
+                    <option value="Criptomoeda" class="option--default">Criptomoeda</option>
+                    <option value="Bônus" class="option--default">Bônus</option>
+                    <option value="Multiplicador" class="option--default">Multiplicador</option>
+                    <option value="Item Especial" class="option--default">Item Especial</option>
+                </select>
+
+                <input id="valor" class="form-input--default" placeholder="Valor" type="number">
+
+                <select name="Moeda" id="TypeJogos" class="select-input--default">
+                    <option value="default" class="option--default" disabled selected>Selecione o tipo de bitcoin
+                    </option>
+                    <option value="BTC" class="option--default">Bitcoin (BTC)</option>
+                    <option value="ETH" class="option--default">Ethereum (ETH)</option>
+                    <option value="USDT" class="option--default">Tether (USDT)</option>
+
+                </select>
+
+                <input type="number" name="probabilidade" step="0.01" min="0" max="100" required
+                    placeholder="Probabilidade (%)" class="form-input--default">
+
+                <select name="typeJogos" id="TypeJogos" class="select-input--default">
+                    <option value="default" class="option--default" disabled selected>Selecione o tipo de jogo</option>
+                    <option value="caca-niquel" class="option--default">Caça-níquel</option>
+                    <option value="campo-minado" class="option--default">Campo minado</option>
+                    <option value="aviaozinho" class="option--default">Aviaozinho</option>
+                    <option value="roleta" class="option--default">Roleta</option>
+                    <option value="blackjack" class="option--default">BlackJack</option>
+                    <option value="poker" class="option--default">Poker</option>
+                </select>
+
+                <input id="btnSubmit" class="form-input--default form-input--submit" type="submit" name="btn-submit">
+            </form>
+        </div>
+
+        </div>
+
+        <div class="container-table">
+            <div class="container-table--bg"></div>
+            <h3>Dados Cadastrados</h3>
+            <table class="default-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Prêmio</th>
+                        <th>Tipo de Prêmio</th>
+                        <th>Valor</th>
+                        <th>Moeda</th>
+                        <th>Probabilidade (%)</th>
+                        <th>Tipo de Jogo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bonus Inicial BTC</td>
+                        <td>Bônus</td>
+                        <td>0.005</td>
+                        <td>BTC</td>
+                        <td>12.5</td>
+                        <td>Caça-níquel</td>
+                    </tr>
+                    <tr>
+                        <td>Ethereum Triplo</td>
+                        <td>Multiplicador</td>
+                        <td>0.01</td>
+                        <td>ETH</td>
+                        <td>5.0</td>
+                        <td>BlackJack</td>
+                    </tr>
+                    <tr>
+                        <td>Caixinha USDT</td>
+                        <td>Criptomoeda</td>
+                        <td>25</td>
+                        <td>USDT</td>
+                        <td>18.0</td>
+                        <td>Campo minado</td>
+                    </tr>
+                    <tr>
+                        <td>Token da Sorte</td>
+                        <td>Item Especial</td>
+                        <td>1</td>
+                        <td>BTC</td>
+                        <td>3.2</td>
+                        <td>Roleta</td>
+                    </tr>
+                    <tr>
+                        <td>Multiplicador Fantasma</td>
+                        <td>Multiplicador</td>
+                        <td>2</td>
+                        <td>ETH</td>
+                        <td>7.75</td>
+                        <td>Aviaozinho</td>
+                    </tr>
+                    <tr>
+                        <td>Vault Poker Premium</td>
+                        <td>Item Especial</td>
+                        <td>3</td>
+                        <td>USDT</td>
+                        <td>2.0</td>
+                        <td>Poker</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+    <footer>
+        <small>
+            <i>Copyright &copf;2025 - Criptobet</i>
+        </small>
+    </footer>
+
+    <script src="../app/select.js"></script>
+</body>
+
+</html>
