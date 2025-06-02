@@ -200,7 +200,7 @@ a {
 .input-container .password-input, .input-container .form-input--cpf {
     width: 100%;
     color: #FFF;
-    padding: 1rem;
+    padding: .8rem;
     border: 1px solid var(--font-color-gray);
     font-family: var(--font-primary);
     background-color: transparent;
