@@ -161,7 +161,7 @@ a {
 
 .default-form .form-input--default {
     width: 60%;
-} 
+}
 
 .default-form input::placeholder {
     font-size: 16px;
@@ -280,3 +280,31 @@ a {
     border: 1px solid var(--font-color-gray);
     padding: 1rem;
 }
+
+.select-input--default {
+    width: 100%;
+    color: var(--font-color-gray);
+    padding: .8rem;
+    border: 1px solid var(--font-color-gray);
+    font-family: var(--font-primary);
+    background-color: transparent;
+    border-radius: 1rem;
+
+    outline: none;
+    box-shadow: none;
+
+    font-size: 16px;
+}
+
+.option--default {
+    color: var(--font-color-primary);
+    background-color: var(--bg-container-primary);
+    font-family: var(--font-primary);
+    border: 1px solid var(--font-color-gray);
+    
+}
+.default-form .select-input--default {
+    width: 60%;
+}
+
+
