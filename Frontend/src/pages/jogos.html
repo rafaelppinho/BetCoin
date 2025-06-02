@@ -50,7 +50,13 @@
 
 				<input id="max_input" class="form-input--default" placeholder="Premio Máximo" type="text">
 
-				<input id="tax_input" class="form-input--default" placeholder="Taxa de Risco" type="text">
+				<select name="typeJogos" id="TypeJogos" class="select-input--default">
+					<option value="default" class="option--default" disabled selected>Selecione o tipo de jogo</option>
+					<option value="Baixo" class="option--default">Baixo</option>
+					<option value="Médio" class="option--default">Médio</option>
+					<option value="Alto" class="option--default">Alto</option>
+
+				</select>
 
 				<input id="btnSubmit" class="form-input--default form-input--submit" type="submit" name="btn-submit">
 
@@ -65,41 +71,48 @@
 			<table class="default-table">
 				<thead>
 					<tr>
-						<th>Nome</th>
-						<th>Email</th>
-						<th>Nascimento</th>
+						<th>Tipo de Jogo</th>
+						<th>Investimento Mínimo</th>
+						<th>Prêmio Máximo</th>
+						<th>Taxa de Risco</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td>Arthur Parada</td>
-						<td>arthur.cavalheiro@uscsonline.com.br</td>
-						<td>08/04/2006</td>
+						<td>BlackJack</td>
+						<td>R$ 20,00</td>
+						<td>R$ 1.000,00</td>
+						<td>Baixo</td>
 					</tr>
 					<tr>
-						<td>Enzo Nogueira</td>
-						<td>enzo.nogueira@uscsonline.com.br</td>
-						<td>12/03/2007</td>
+						<td>Campo Minado</td>
+						<td>R$ 10,00</td>
+						<td>R$ 800,00</td>
+						<td>Médio</td>
 					</tr>
 					<tr>
-						<td>Henri Porto</td>
-						<td>henri.porto@uscsonline.com.br</td>
-						<td>14/06/2007</td>
+						<td>Aviaozinho</td>
+						<td>R$ 5,00</td>
+						<td>R$ 1.500,00</td>
+						<td>Alto</td>
 					</tr>
 					<tr>
-						<td>Nicolas Lepore</td>
-						<td>nicolas.lepore@uscsonline.com.br</td>
-						<td>26/09/2006</td>
+						<td>Roleta</td>
+						<td>R$ 15,00</td>
+						<td>R$ 2.000,00</td>
+						<td>Alto</td>
 					</tr>
 					<tr>
-						<td>Rafael Pinho</td>
-						<td>rafael.pinho@uscsonline.com.br</td>
-						<td>05/04/2007</td>
+						<td>Poker</td>
+						<td>R$ 25,00</td>
+						<td>R$ 5.000,00</td>
+						<td>Médio</td>
 					</tr>
 					<tr>
-						<td>Rafael Santos</td>
-						<td>rafael.pereira2@uscsonline.com.br</td>
-						<td>19/11/2004</td>
+						<td>Caça-níquel</td>
+						<td>R$ 2,00</td>
+						<td>R$ 500,00</td>
+						<td>Alto</td>
 					</tr>
 				</tbody>
 			</table>
