@@ -38,7 +38,16 @@
 			<form class="default-form">
 				<input class="form-input--default" id="name" placeholder="Titular" name="name" type="text" required>
 				<input class="form-input--default" id="email" placeholder="Número do cartão" name="numeroDoCartao" type="number" required>
-                <input class="form-input--default" id="plataforma" placeholder="Plataforma" name="plataforma" type="text" required>										
+                <input class="form-input--default" id="validade" placeholder="Data de validade" name="validade" type="date" required>
+                <input class="form-input--default" id="cvv" placeholder="CVV" name="cvv" max="999" maxlength="3" type="number" required>
+                <select name="bandeira" id="select-bandeira" class="select-input--default">
+					<option value="default" class="option--default" disabled selected>Selecione o tipo de bandeira</option>
+					<option value="caca-niquel" name="bandeira" class="option--default">Mastercard</option>
+					<option value="campo-minado"  name="bandeira" class="option--default">Elo</option>
+					<option value="aviaozinho"  name="bandeira" class="option--default">Visa</option>
+					<option value="roleta"  name="bandeira" class="option--default">Amex</option>
+				</select>	
+
 
 				<input class="form-input--default form-input--submit" id="btnSubmit" type="submit" name="btn-submit">
 
@@ -51,41 +60,34 @@
 			<table class="default-table">
 				<thead>
 					<tr>
-						<th>Nome</th>
-						<th>Email</th>
-						<th>Plataforma</th>
+						<th>Titular</th>
+						<th>Bandeira</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
 						<td>Arthur Parada</td>
-						<td>arthur.cavalheiro@uscsonline.com.br</td>
-						<td>TikTok</td>
+						<td>Elo</td>
 					</tr>
 					<tr>
 						<td>Enzo Nogueira</td>
-						<td>enzo.nogueira@uscsonline.com.br</td>
-						<td>Instagram</td>
+						<td>Amex</td>
 					</tr>
 					<tr>
 						<td>Henri Porto</td>
-						<td>henri.porto@uscsonline.com.br</td>
-						<td>Tinder</td>
+						<td>Visa</td>
 					</tr>
 					<tr>
 						<td>Nicolas Lepore</td>
-						<td>nicolas.lepore@uscsonline.com.br</td>
-						<td>Instagram</td>
+						<td>Mastercard</td>
 					</tr>
 					<tr>
 						<td>Rafael Pinho</td>
-						<td>rafael.pinho@uscsonline.com.br</td>
-						<td>Youtube</td>
+						<td>Elo</td>
 					</tr>
 					<tr>
 						<td>Rafael Santos</td>
-						<td>rafael.pereira2@uscsonline.com.br</td>
-						<td>Youtube</td>
+						<td>Mastercard</td>
 					</tr>
 				</tbody>
 			</table>
