@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CriptoBet-Jogos</title>
-	<link rel="stylesheet" href="/src/styles/styles.css">
-	<link rel="stylesheet" href="/src/styles/jogos.css">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/jogos.css">
 </head>
 
 <body>
@@ -14,12 +14,12 @@
 		<div class="logo-container">
 			<img src="/public/images/criptobet-logo.png" alt="Logo da Criptobet">
 		</div>
-		
+
 		<nav class="navbar">
 			<ul>
 				<li>
-					<a href="">Home</a>
-					<a href="">Cadastrar</a>
+					<a href="/BetCoin/Frontend/index.html">Home</a>
+					<a href="cliente.html">Cadastrar</a>
 					<a href="">Login</a>
 				</li>
 			</ul>
@@ -32,70 +32,88 @@
 				<h1>Cadastre seu jogo abaixo - Admin</h1>
 			</div>
 		</div>
-		
-		
-		<form class="games-form">
-			<fieldset>
-				<legend>Tipos de jogos</legend>
-				<div>
 
-					<label for="inputs">Caça níquel</label>
-					<input name="typegames" id="cacaniquel" class="inputs_radio" type="radio" value="cacaniquel">
+		<div class="container-form">
+			<div class="container-form--bg"></div>
+			<form class="default-form">
+				<select name="typeJogos" id="TypeJogos" class="select-input--default">
+					<option value="default" class="option--default" id="defaultOption">Selecione o tipo de jogo</option>
+					<option value="caca-niquel" class="option--default" id="defaultOption">caça-níquel</option>
+					<option value="campo-minado" class="option--default" id="defaultOption">campo minado</option>
+					<option value="aviaozinho" class="option--default" id="defaultOption">Aviaozinho</option>
+					<option value="roleta" class="option--default" id="defaultOption">Roleta</option>
+					<option value="blackjack" class="option--default" id="defaultOption">BlackJack</option>
+					<option value="poker" class="option--default" id="defaultOption">Poker</option>
+				</select>
 
-				</div>
+				<input id="min_input" class="form-input--default" placeholder="Investimento Minímo" type="text">
 
-				<div>
+				<input id="max_input" class="form-input--default" placeholder="Premio Máximo" type="text">
 
-					<label for="inputs">Campo minado</label>
-					<input name="typegames" id="campominado" class="inputs_radio" type="radio" value="campominado">
+				<input id="tax_input" class="form-input--default" placeholder="Taxa de Risco" type="text">
 
-				</div>
+				<input id="btnSubmit" class="form-input--default form-input--submit" type="submit" name="btn-submit">
 
-				<div>
+			</form>
+		</div>
 
-					<label for="inputs">Aviaozinho</label>
-					<input name="typegames" id="aviaozinho" class="inputs_radio" type="radio" value="Aviaozinho">
+		</div>
 
-				</div>
+		<div class="container-table">
+			<div class="container-table--bg"></div>
+			<h3>Dados Cadastrados</h3>
+			<table class="default-table">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>Nascimento</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Arthur Parada</td>
+						<td>arthur.cavalheiro@uscsonline.com.br</td>
+						<td>08/04/2006</td>
+					</tr>
+					<tr>
+						<td>Enzo Nogueira</td>
+						<td>enzo.nogueira@uscsonline.com.br</td>
+						<td>12/03/2007</td>
+					</tr>
+					<tr>
+						<td>Henri Porto</td>
+						<td>henri.porto@uscsonline.com.br</td>
+						<td>14/06/2007</td>
+					</tr>
+					<tr>
+						<td>Nicolas Lepore</td>
+						<td>nicolas.lepore@uscsonline.com.br</td>
+						<td>26/09/2006</td>
+					</tr>
+					<tr>
+						<td>Rafael Pinho</td>
+						<td>rafael.pinho@uscsonline.com.br</td>
+						<td>05/04/2007</td>
+					</tr>
+					<tr>
+						<td>Rafael Santos</td>
+						<td>rafael.pereira2@uscsonline.com.br</td>
+						<td>19/11/2004</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 
-				<div>
-
-					<label for="inputs">Roleta</label>
-					<input name="typegames" id="Roleta" class="inputs_radio" type="radio" value="Roleta">
-
-				</div>
-				<div>
-
-					<label for="inputs">BlackJack</label>
-					<input name="typegames" id="BlackJack" class="inputs_radio" type="radio" value="BlackJack">
-
-				</div>
-				<div>
-
-					<label for="inputs">Poker</label>
-					<input name="typegames" id="Poker" class="inputs_radio" type="radio" value="Poker">
-
-				</div>
-			</fieldset>
-
-			<label for="inputs">investimento minímo</label>
-			<input id="min_input" class="inputs" type="text">
-
-			<label for="inputs">Premio Máximo</label>
-			<input id="max_input" class="inputs" type="text">
-
-			<label for="inputs">Taxa de Risco</label>
-			<input id="tax_input" class="inputs" type="text">
-
-			<input id="nome_input" type="submit" name="btn_submit" id="btn_submit">
-
-		</form>
 	</main>
 	<!-- <footer>
 		<small>
 			<i>Copyright &copf;2025 - Criptobet</i>
 		</small>
 	</footer> -->
+
+	<script src="../src/app/button.js"></script>
+	<script src="../src/app/select.js"></script>
 </body>
 
 </html>
