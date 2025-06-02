@@ -35,15 +35,15 @@
 
 		<div class="container-form">
 			<div class="container-form--bg"></div>
-			<form class="default-form">
+			<form class="default-form" id="gameForm">
 				<select name="typeJogos" id="TypeJogos" class="select-input--default">
-					<option value="default" class="option--default" id="defaultOption">Selecione o tipo de jogo</option>
-					<option value="caca-niquel" class="option--default" id="defaultOption">caça-níquel</option>
-					<option value="campo-minado" class="option--default" id="defaultOption">campo minado</option>
-					<option value="aviaozinho" class="option--default" id="defaultOption">Aviaozinho</option>
-					<option value="roleta" class="option--default" id="defaultOption">Roleta</option>
-					<option value="blackjack" class="option--default" id="defaultOption">BlackJack</option>
-					<option value="poker" class="option--default" id="defaultOption">Poker</option>
+					<option value="default" class="option--default" disabled selected>Selecione o tipo de jogo</option>
+					<option value="caca-niquel" class="option--default">caça-níquel</option>
+					<option value="campo-minado" class="option--default">campo minado</option>
+					<option value="aviaozinho" class="option--default">Aviaozinho</option>
+					<option value="roleta" class="option--default">Roleta</option>
+					<option value="blackjack" class="option--default">BlackJack</option>
+					<option value="poker" class="option--default">Poker</option>
 				</select>
 
 				<input id="min_input" class="form-input--default" placeholder="Investimento Minímo" type="text">
@@ -112,8 +112,7 @@
 		</small>
 	</footer> -->
 
-	<script src="../src/app/button.js"></script>
-	<script src="../src/app/select.js"></script>
+	<script src="../app/select.js"></script>
 </body>
 
 </html>

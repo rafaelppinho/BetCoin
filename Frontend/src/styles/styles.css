@@ -301,7 +301,6 @@ a {
     background-color: var(--bg-container-primary);
     font-family: var(--font-primary);
     border: 1px solid var(--font-color-gray);
-    
 }
 .default-form .select-input--default {
     width: 60%;
