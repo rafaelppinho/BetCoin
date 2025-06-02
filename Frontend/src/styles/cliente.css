@@ -1,9 +1,9 @@
-.password--container {
+.input-container {
     width: 60%;
     position: relative;
 }
 
-.password--container .password-input {
+.input-container .password-input, .input-container .form-input--cpf {
     width: 100%;
     color: #FFF;
     padding: 1rem;
@@ -25,6 +25,11 @@
 .btn-view-password img {
     width: 25px;
     height: 25px;
+}
+
+.error-message {
+    display: none;
+    color: #ff4545;
 }
 
 .form-input--submit {
