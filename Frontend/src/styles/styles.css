@@ -35,7 +35,7 @@ a {
 }
 
 .header {
-    padding: 1rem;
+    padding: .5rem 1rem;
     width: 100%;
     background-color: var(--bg-header);
 
@@ -80,13 +80,13 @@ a {
 
     position: relative;
 
-    margin: 2rem 0;
+    margin: 2rem 0 3rem 0;
 }
 
 .container-title--inner {
     width: 70%;
     background-color: var(--bg-container-primary);
-    height: 200px;
+    height: 125px;
 
     display: flex;
     justify-content: center;
@@ -101,7 +101,7 @@ a {
 .container-title--bg {
     width: 70%;
     background-color: var(--bg-container-secondary);
-    height: 200px;
+    height: 125px;
 
     display: flex;
     justify-content: center;
@@ -118,4 +118,84 @@ a {
     font-weight: 500;
 
     text-align: center;
+}
+
+
+/* FORMS */
+
+.container-form {
+    width: 100%;
+    position: relative;
+}
+
+
+.container-form--bg {
+    width: 76.5%;
+    background-color: var(--bg-container-secondary);
+    height: 32rem;
+
+    position: absolute;
+    left: 0;
+    top: 16px;
+    
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+}
+
+.default-form {
+    width: 75%;
+    height: 32rem;
+
+    padding: 1.5rem;
+
+    background-color: var(--bg-container-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+
+.default-form .form-input--default {
+    width: 60%;
+} 
+
+.default-form input::placeholder {
+    font-size: 16px;
+    color: var(--font-color-gray);
+}
+
+.form-input--default {
+    width: 100%;
+    color: #FFF;
+    padding: .8rem;
+    border: 1px solid var(--font-color-gray);
+    font-family: var(--font-primary);
+    background-color: transparent;
+    border-radius: 1rem;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.default-table {
+    background-color: var(--bg-container-primary);
+
+    width: 75%;
+    height: 100%;
+
+    padding: 1rem;
+    position: relative;
+}
+
+.default-table thead, .default-table tbody {
+    width: 100%;
+}
+
+.default-table th, .default-table td {
+    border: 1px solid var(--font-color-gray);
+    padding: 1rem;
 }
